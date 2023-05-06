@@ -12,7 +12,7 @@ const markup = Extra.markup(
   ])
 )
 
-const bot = new Telegraf(process.env.BOT_TOKEN)
+const bot = new Telegraf('5733239861:AAHaDSeqZcDCOLbzAGyJkkrezeXx7mbMLwo')
 bot.start(({ replyWithGame }) => replyWithGame(gameShortName))
 bot.command('foo', ({ replyWithGame }) => replyWithGame(gameShortName, markup))
 bot.gameQuery(({ answerGameQuery }) => answerGameQuery(gameUrl))
